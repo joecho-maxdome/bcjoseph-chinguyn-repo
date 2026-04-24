@@ -1,0 +1,18 @@
+# {"Notebook-task":{"x":591,"y":342.015625}}
+kevTest-vZpXcntiS2:
+  dag_id: kevTest-vZpXcntiS2
+  tasks:
+    Notebook-task:
+      operator: >-
+        airflow.providers.amazon.aws.operators.sagemaker_unified_studio.SageMakerNotebookOperator
+      input_config:
+        input_params: {}
+        input_path: test_notebook.ipynb
+      compute:
+        instance_type: ml.m6i.xlarge
+        image_details:
+          ecr_uri: >-
+            354058284337.dkr.ecr.us-west-2.amazonaws.com/sagemaker-distribution-embargoed-loadtest:2.2.5-reinvent2024-cpu
+      output_config:
+        output_formats:
+          - NOTEBOOK
