@@ -1,0 +1,7 @@
+# {"Notebook-task":{"x":205,"y":288}}
+MyWorkflow-1777487477659:
+  dag_id: MyWorkflow-1777487477659
+  tasks:
+    Notebook-task:
+      operator: >-
+        airflow.providers.amazon.aws.operators.sagemaker_unified_studio.SageMakerNotebookOperator
