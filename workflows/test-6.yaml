@@ -1,11 +1,12 @@
-# {"Notebook-task":{"x":-21,"y":19},"Glue-task":{"x":292.25,"y":18.5}}
+# {"Notebook-task":{"x":-21,"y":19},"Querybook-task-1":{"x":334.25,"y":42.5}}
 test-6:
   dag_id: test-6
   tasks:
     Notebook-task:
       operator: >-
         airflow.providers.amazon.aws.operators.sagemaker_unified_studio.SageMakerNotebookOperator
-    Glue-task:
+    Querybook-task-1:
       dependencies:
         - Notebook-task
-      operator: airflow.providers.amazon.aws.operators.glue.GlueJobOperator
+      operator: >-
+        airflow.providers.amazon.aws.operators.sagemaker_unified_studio.SageMakerNotebookOperator
