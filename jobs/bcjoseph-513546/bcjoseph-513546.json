@@ -3,7 +3,7 @@
   "formInput": {
     "FileName": "bcjoseph-513546",
     "ContentType": "text/x-python",
-    "Body": ""
+    "Body": "import sys\nfrom pyspark.context import SparkContext\nfrom pyspark.sql import SparkSession\n\nsc = SparkContext.getOrCreate()\nspark = SparkSession.builder.getOrCreate()\n\n# Script generated for node S3DataSource\nS3DataSource_1778708519046 = spark.read.format(\"csv\") \\\n    .option(\"inferschema\", \"true\") \\\n    .option(\"multiLine\", \"true\") \\\n    .option(\"header\", \"true\") \\\n    .option(\"recursiveFileLookup\", \"true\") \\\n    .option(\"sep\", \",\") \\\n    .load(\"s3://fdsa3\")\n"
   },
   "bucketName": "amazon-sagemaker-619071339486-us-west-2-add013f1542b",
   "JobUpdate": {
