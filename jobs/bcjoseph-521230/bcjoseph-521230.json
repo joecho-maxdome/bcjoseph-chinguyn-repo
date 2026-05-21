@@ -1,7 +1,7 @@
 {
   "Timeout": 480,
   "WorkerType": "G.1X",
-  "NumberOfWorkers": 10,
+  "NumberOfWorkers": 12,
   "GlueVersion": "5.1",
   "Name": "bcjoseph-521230",
   "MaxRetries": 0,
