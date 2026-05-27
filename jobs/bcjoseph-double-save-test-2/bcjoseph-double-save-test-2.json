@@ -9,7 +9,7 @@
   "JobUpdate": {
     "Timeout": 480,
     "WorkerType": "G.1X",
-    "NumberOfWorkers": 10,
+    "NumberOfWorkers": 8,
     "GlueVersion": "5.1",
     "Name": "bcjoseph-double-save-test-2",
     "MaxRetries": 0,
